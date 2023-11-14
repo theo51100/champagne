@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Champagne Game</title>
+</head>
+<body>
+  <canvas id="game" width="640" height="480"></canvas>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pygame/2.0.0/pygame.min.js"></script>
+
+  <script>
+    var game = new Pygame({
+      canvas: document.getElementById("game"),
+      width: 640,
+      height: 480
+    });
+
+    game.load("champagne.py");
+
+    game.start();
+  </script>
+</body>
+</html>
